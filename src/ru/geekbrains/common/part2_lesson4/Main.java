@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         masIn();
+        massiv();
     }
 
     public static void masIn() {
@@ -17,11 +18,14 @@ public class Main {
                 myArr[i] = myArr[size - 1 - i];
                 myArr[size - 1 - i] = temp;
             }
-            System.out.println("Array after reverse:: ");
             System.out.println(Arrays.toString(myArr));
         }
 
     public static void massiv(){
-
+        int[] intMass = new int[100];
+        for (int i = 0; i < 100; i++) {
+            intMass[i] = i + 1;
+        }
+        System.out.println(Arrays.toString(intMass));
     }
 }
