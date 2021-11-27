@@ -8,6 +8,7 @@ public class Main {
         // write your code here
         masIn();
         massiv();
+        masMas();
     }
 
     public static void masIn() {
@@ -28,4 +29,15 @@ public class Main {
         }
         System.out.println(Arrays.toString(intMass));
     }
+
+    public static void masMas(){
+        int[] masInt = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < masInt.length; i++) {
+            if (masInt[i] < 6) {
+                masInt[i] *= 2;
+            }
+        }
+        System.out.println(Arrays.toString(masInt));
+    }
+
 }
